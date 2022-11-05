@@ -1,7 +1,7 @@
 import './styles.css'
 
 const HangmanWord = () => {
-  const word = 'test'
+  const word = 'opportunity'
   const guessedLetters = ['e']
 
 

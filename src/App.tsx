@@ -13,16 +13,18 @@ function App() {
     
   return (
     <div className="mainContainer">
-      <div style={{display:'flex', width: '100%', justifyContent: 'space-between', gap: '200px'}}>
-        <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '15px' }}>
+      <div style={{display:'flex', width: '100%', justifyContent: 'center', alignItems: 'center', gap: '200px'}}>
+        <div style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '15px', overflow: 'hidden' }}>
           <div className="header">Lose Win</div>
           <HangmanDrawing />
-          <HangmanWord />
         </div>
-        <div style={{ alignSelf: 'stretch', width: '100%'}}>
+        <div >
           <Keyboard />
         </div>
         </div>
+          <div>
+            <HangmanWord />
+          </div>
     
     
      </div>
