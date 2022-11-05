@@ -51,7 +51,7 @@ function App() {
         </div>
         </div>
           <div>
-            <HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
+            <HangmanWord reveal={isLoser} guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
           </div>
     
     
