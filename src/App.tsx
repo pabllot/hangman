@@ -13,8 +13,16 @@ function App() {
     
   return (
     <div className="mainContainer">
-      <div className="header">Lose Win</div>
-      <HangmanDrawing />
+      <div style={{display:'flex', width: '100%', justifyContent: 'space-between', gap: '200px'}}>
+        <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '15px' }}>
+          <div className="header">Lose Win</div>
+          <HangmanDrawing />
+          <HangmanWord />
+        </div>
+        <div style={{ alignSelf: 'stretch', width: '100%'}}>
+          <Keyboard />
+        </div>
+        </div>
     
     
      </div>

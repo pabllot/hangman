@@ -1,9 +1,18 @@
-import React from 'react'
 import './styles.css'
 
 const HangmanWord = () => {
+  const word = 'test'
+  const guessedLetters = ['e']
+
+
   return (
-    <div>HangmanWord</div>
+    <div className='wordContainer'>
+      {word.split("").map((letter, index) => (
+        <span style={{ borderBottom: '.1em solid white'}} key={index}>
+          <span style={{ visibility: guessedLetters.includes(letter) ? 'visible' : 'hidden'}}>{letter}</span>
+        </span>
+      ))}
+    </div>
   )
 }
 
