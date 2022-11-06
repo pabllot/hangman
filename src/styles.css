@@ -16,3 +16,14 @@ body {
     text-align: center;
     color: white;
 }
+
+.button {
+    background: none;
+    outline: none;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    margin-top: -80px;
+}
